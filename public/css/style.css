@@ -1,0 +1,100 @@
+/* stylesheet  */
+
+/* import  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+/* utilities  */
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #182C61;
+}
+
+
+/*--------------------
+ stylesheet design here  
+ ----------------------*/
+
+ .random-container{
+     position: relative;
+    background: #fff;
+     width: 450px;
+ }
+.random-title{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    color: #182C61;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.random-title img{
+    max-width: 100%;
+    width: 15%;
+}
+
+.random-content{
+    position: relative;
+}
+.random-content .jokes-img{
+    text-align: center;
+    margin-top: 1rem;
+}
+.random-content .jokes-details{
+    padding: 1rem 1.5rem;
+    text-align: center;
+    
+}
+
+.text img{
+    max-width: 100%;
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+.jokes-details p.text{
+    font-size: 1.2rem;
+    word-break: break-all;
+    line-height: 1.3;
+}
+.random-content .jokes-option{
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    text-align: right;
+}
+.jokes-option button{
+    padding: .6rem 1rem;
+    border-radius: 4px;
+    background: #182C61;
+    border: none;
+    outline: none;
+    color: #f5f6fa;
+    margin-right: .4rem;
+    font-family: 'Raleway',sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid #182C61;
+}
+button.copy-jokes{
+    background: transparent;
+    border: 1px solid #182C61;
+    color: #182C61;
+}
+.jokes-option button:active{
+    transform: translateY(5px);
+}
